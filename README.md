@@ -76,56 +76,56 @@ Berikut adalah perintah yang **sering digunakan** beserta fungsinya secara singk
 
 ## 🎉 Membuat Project Laravel Baru
 
-| Perintah                                                      | Fungsi                                       |
-| ------------------------------------------------------------- | -------------------------------------------- |
-| `composer create-project laravel/laravel="11.*" nama-project` | Membuat project Laravel baru dengan Composer |
+| Perintah                                                                                                        | Fungsi                                       |
+| --------------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
+| <pre><code class="language-bash">composer create-project laravel/laravel="11.\*" nama-project     </code></pre> | Membuat project Laravel baru dengan Composer |
 
 ---
 
 ## 📌 Dasar
 
-| Perintah                     | Fungsi                                      |
-| ---------------------------- | ------------------------------------------- |
-| `php artisan serve`          | Menjalankan server lokal Laravel            |
-| `php artisan list`           | Melihat semua daftar perintah Artisan       |
-| `php artisan help [command]` | Menampilkan bantuan untuk perintah tertentu |
+| Perintah                                                                      | Fungsi                                      |
+| ----------------------------------------------------------------------------- | ------------------------------------------- |
+| <pre><code class="language-bash">php artisan serve     </code></pre>          | Menjalankan server lokal Laravel            |
+| <pre><code class="language-bash">php artisan list     </code></pre>           | Melihat semua daftar perintah Artisan       |
+| <pre><code class="language-bash">php artisan help [command]     </code></pre> | Menampilkan bantuan untuk perintah tertentu |
 
 ---
 
 ## 🛠️ Database & Migrations
 
-| Perintah                       | Fungsi                                     |
-| ------------------------------ | ------------------------------------------ |
-| `php artisan migrate`          | Menjalankan semua migrasi database         |
-| `php artisan migrate:rollback` | Membatalkan migrasi terakhir               |
-| `php artisan migrate:fresh`    | Menghapus semua tabel lalu migrasi ulang   |
-| `php artisan db:seed`          | Mengisi data awal (seeder) ke database     |
-| `php artisan migrate --seed`   | Migrasi database sekaligus jalankan seeder |
+| Perintah                                                                        | Fungsi                                     |
+| ------------------------------------------------------------------------------- | ------------------------------------------ |
+| <pre><code class="language-bash">php artisan migrate     </code></pre>          | Menjalankan semua migrasi database         |
+| <pre><code class="language-bash">php artisan migrate:rollback     </code></pre> | Membatalkan migrasi terakhir               |
+| <pre><code class="language-bash">php artisan migrate:fresh     </code></pre>    | Menghapus semua tabel lalu migrasi ulang   |
+| <pre><code class="language-bash">php artisan db:seed     </code></pre>          | Mengisi data awal (seeder) ke database     |
+| <pre><code class="language-bash">php artisan migrate --seed     </code></pre>   | Migrasi database sekaligus jalankan seeder |
 
 ---
 
 ## 🏗️ Generate File Cepat
 
-| Perintah                                       | Fungsi                           |
-| ---------------------------------------------- | -------------------------------- |
-| `php artisan make:model NamaModel`             | Membuat model baru               |
-| `php artisan make:controller NamaController`   | Membuat controller baru          |
-| `php artisan make:migration create_nama_table` | Membuat file migrasi tabel       |
-| `php artisan make:seeder NamaSeeder`           | Membuat seeder baru              |
-| `php artisan make:middleware NamaMiddleware`   | Membuat middleware               |
-| `php artisan make:request NamaRequest`         | Membuat request class (validasi) |
+| Perintah                                                                                        | Fungsi                           |
+| ----------------------------------------------------------------------------------------------- | -------------------------------- |
+| <pre><code class="language-bash">php artisan make:model NamaModel     </code></pre>             | Membuat model baru               |
+| <pre><code class="language-bash">php artisan make:controller NamaController     </code></pre>   | Membuat controller baru          |
+| <pre><code class="language-bash">php artisan make:migration create_nama_table     </code></pre> | Membuat file migrasi tabel       |
+| <pre><code class="language-bash">php artisan make:seeder NamaSeeder     </code></pre>           | Membuat seeder baru              |
+| <pre><code class="language-bash">php artisan make:middleware NamaMiddleware     </code></pre>   | Membuat middleware               |
+| <pre><code class="language-bash">php artisan make:request NamaRequest     </code></pre>         | Membuat request class (validasi) |
 
 ---
 
 ## 🔍 Debug & Utilitas
 
-| Perintah                   | Fungsi                                           |
-| -------------------------- | ------------------------------------------------ |
-| `php artisan route:list`   | Menampilkan semua route yang tersedia            |
-| `php artisan config:cache` | Cache konfigurasi agar lebih cepat               |
-| `php artisan cache:clear`  | Hapus cache aplikasi                             |
-| `php artisan route:cache`  | Cache route aplikasi                             |
-| `php artisan tinker`       | Masuk ke REPL Laravel untuk coba kode interaktif |
+| Perintah                                                                    | Fungsi                                           |
+| --------------------------------------------------------------------------- | ------------------------------------------------ |
+| <pre><code class="language-bash">php artisan route:list     </code></pre>   | Menampilkan semua route yang tersedia            |
+| <pre><code class="language-bash">php artisan config:cache     </code></pre> | Cache konfigurasi agar lebih cepat               |
+| <pre><code class="language-bash">php artisan cache:clear     </code></pre>  | Hapus cache aplikasi                             |
+| <pre><code class="language-bash">php artisan route:cache     </code></pre>  | Cache route aplikasi                             |
+| <pre><code class="language-bash">php artisan tinker     </code></pre>       | Masuk ke REPL Laravel untuk coba kode interaktif |
 
 ---
 
@@ -139,4 +139,4 @@ Dengan Artisan CLI, developer bisa:
 ---
 
 ✨ **Tips:**  
-Gunakan `php artisan list` untuk melihat semua perintah, lalu kombinasikan dengan `make:*` agar produktivitas makin tinggi.
+Gunakan <pre><code class="language-bash">php artisan list     </code></pre> untuk melihat semua perintah, lalu kombinasikan dengan <pre><code class="language-bash">make:\*     </code></pre> agar produktivitas makin tinggi.
