@@ -12,8 +12,8 @@ use App\Http\Controllers\Pimpinan\LaporansupplierController;
 use App\Http\Controllers\Admin\DataPimpinanController;
 use App\Http\Controllers\Admin\DataOperatorController;
 use App\Http\Controllers\Admin\ProfileAdminController;
-// use App\Http\Controllers\Admin\ProfileOperatorController;
-// use App\Http\Controllers\Admin\ProfilePimpinanController;
+use App\Http\Controllers\Admin\ProfileOperatorController;
+use App\Http\Controllers\Admin\ProfilePimpinanController;
 
 
 // Route::get('/', function () {
@@ -46,4 +46,15 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/pdfbarang', [LaporanBarangController::class, 'pdfbarang']);
 
     //admin
+    Route::resource('/usermanagement', DataManagementController::class);
+    Route::resource('/datapimpinan', DataPimpinanController::class);
+    Route::resource('/dataoprator', DataOperatorController::class);
+
+    //profile
+    Route::get('/profile', [ProfileAdminController::class, 'index'])->name('profile.index');
+    Route::patch('/profile/{id}', [ProfileAdminController::class, 'update'])->name('profile.update');
+    Route::get('/profile', [ProfileOperatorController::class, 'index'])->name('profile.index');
+    Route::patch('/profile/{id}', [ProfileOperatorController::class, 'update'])->name('profile.update');
+    Route::get('/profile', [ProfilePimpinanController::class, 'index'])->name('profile.index');
+    Route::patch('/profile/{id}', [ProfilePimpinanController::class, 'update'])->name('profile.update');
 });
